@@ -1,11 +1,11 @@
 function prmanStart(request, response) {
-  let slackRequest = require("./slack")
-  let req = new slackRequest(request.body);
-  req.init();
+  const s = require("../slack/slack");
+  const req = s.getBody(request);
+  const reqMap = s.parse(req)
 
   // ToDo: Token Validation
 
-  const user = req.getUser();
+  const user = s.getUser(req);
 
   // ToDo: getGithubUser
   // ToDo: getRepos
