@@ -1,6 +1,6 @@
-var server = require("./server");
-var router = require("./router");
-var requestHandlers = require("./requestHandlers");
+var server = require("./prman/server/server");
+var router = require("./prman/router/router");
+var requestHandlers = require("./prman/requestHandlers/requestHandlers");
 
 var handle = {}
 handle["/"] = requestHandlers.prmanStart;
