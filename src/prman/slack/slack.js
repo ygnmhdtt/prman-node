@@ -7,12 +7,12 @@ exports.getBody = function(request) => {
   return body;
 })};
 
-let parse = (request) => {
+const parse = (request) => {
   console.log(request);
   const arr = request.split("&");
 };
 
-let getUser = (request) => {
+const getUser = (request) => {
   if (this.text == "") {
     return this.userName;
   }
@@ -20,7 +20,7 @@ let getUser = (request) => {
 }
 
 // ToDo: Error Handling
-let getText = (arr, target) => {
+const getText = (arr, target) => {
   return arr.filter((elem) => { elem == target })[0];
 }
 
