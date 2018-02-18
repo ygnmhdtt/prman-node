@@ -10,9 +10,10 @@ exports.getBody = function(request) => {
 const parse = (request) => {
   console.log(request);
   const arr = request.split("&");
+  return arr;
 };
 
-const getUser = (request) => {
+const getUser = (map) => {
   if (this.text == "") {
     return this.userName;
   }

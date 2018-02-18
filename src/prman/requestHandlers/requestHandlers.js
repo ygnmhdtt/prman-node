@@ -5,7 +5,7 @@ function prmanStart(request, response) {
 
   // ToDo: Token Validation
 
-  const user = s.getUser(req);
+  const user = s.getUser(reqMap);
   console.log(user);
 
   // ToDo: getGithubUser
